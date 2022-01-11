@@ -22,7 +22,7 @@ from django.contrib.auth.views import (
 User = get_user_model()
 
 class SignInView(View):
-    template_name = 'autentication/signin.html'
+    template_name = 'authentication/signin.html'
 
     def get(self,request,*args,**kwargs):
         if request.user.is_authenticated:
